@@ -73,8 +73,11 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        //ru.blogabout.arbitrationmanager.config.setAllowedOrigins(Arrays.asList(allowerOrigins));
-        config.addAllowedOrigin("*");
+        //config.setAllowedOrigins(Arrays.asList(allowerOrigins));
+        //config.addAllowedOrigin("*");
+        config.addAllowedOrigin("http://localhost");
+        config.addAllowedOrigin("http://localhost:8081");
+        config.addAllowedOrigin("https://arbitration-manager.ru");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
