@@ -62,6 +62,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/api/v1/auth/**").permitAll()
                 .antMatchers("/api/v1/test/**").permitAll()
+                .antMatchers("/api/v1/helper/**").permitAll()
                 .antMatchers("/api/v1/question/**").permitAll()
                 .antMatchers("/api/v1/property/**").permitAll()
                 .anyRequest().authenticated();
@@ -74,8 +75,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         //config.setAllowedOrigins(Arrays.asList(allowerOrigins));
-        //config.addAllowedOrigin("*");
-        config.addAllowedOrigin("http://localhost");
+        config.addAllowedOrigin("http://localhost:8080");
         config.addAllowedOrigin("http://localhost:8081");
         config.addAllowedOrigin("https://arbitration-manager.ru");
         config.addAllowedHeader("*");
