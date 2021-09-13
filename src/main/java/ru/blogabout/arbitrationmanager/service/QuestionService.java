@@ -1,12 +1,12 @@
-package service;
+package ru.blogabout.arbitrationmanager.service;
 
-import dto.PageListDto;
-import entity.Question;
+import ru.blogabout.arbitrationmanager.dto.PageListDto;
+import ru.blogabout.arbitrationmanager.entity.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import repository.QuestionRepository;
+import ru.blogabout.arbitrationmanager.repository.QuestionRepository;
 
 import java.io.IOException;
 

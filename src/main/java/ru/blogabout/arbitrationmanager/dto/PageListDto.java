@@ -1,4 +1,4 @@
-package dto;
+package ru.blogabout.arbitrationmanager.dto;
 
 import java.util.List;
 

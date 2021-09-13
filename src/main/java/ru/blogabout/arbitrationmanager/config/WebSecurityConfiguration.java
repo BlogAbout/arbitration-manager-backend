@@ -1,7 +1,7 @@
-package config;
+package ru.blogabout.arbitrationmanager.config;
 
-import config.jwt.AuthEntryPointJwt;
-import config.jwt.AuthTokenFilter;
+import ru.blogabout.arbitrationmanager.config.jwt.AuthEntryPointJwt;
+import ru.blogabout.arbitrationmanager.config.jwt.AuthTokenFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -19,9 +19,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import service.UserService;
-
-import java.util.Arrays;
+import ru.blogabout.arbitrationmanager.service.UserService;
 
 @Configuration
 @EnableWebSecurity
@@ -33,7 +31,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     private AuthEntryPointJwt unauthorizedHandler;
 
-    @Value("${config.allower.origins}")
+    @Value("${ru.blogabout.arbitrationmanager.config.allower.origins}")
     private String allowerOrigins;
 
     @Bean
@@ -76,7 +74,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        //config.setAllowedOrigins(Arrays.asList(allowerOrigins));
+        //ru.blogabout.arbitrationmanager.config.setAllowedOrigins(Arrays.asList(allowerOrigins));
         config.addAllowedOrigin("*");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");

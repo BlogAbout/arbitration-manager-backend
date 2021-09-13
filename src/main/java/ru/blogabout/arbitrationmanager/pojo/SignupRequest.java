@@ -1,4 +1,4 @@
-package pojo;
+package ru.blogabout.arbitrationmanager.pojo;
 
 public class SignupRequest {
     private String username;

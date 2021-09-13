@@ -1,6 +1,6 @@
-package repository;
+package ru.blogabout.arbitrationmanager.repository;
 
-import entity.Question;
+import ru.blogabout.arbitrationmanager.entity.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

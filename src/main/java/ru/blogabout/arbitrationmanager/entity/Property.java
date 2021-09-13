@@ -1,4 +1,4 @@
-package entity;
+package ru.blogabout.arbitrationmanager.entity;
 
 import org.hibernate.annotations.CreationTimestamp;
 

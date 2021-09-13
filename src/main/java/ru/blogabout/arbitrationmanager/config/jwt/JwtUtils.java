@@ -1,6 +1,6 @@
-package config.jwt;
+package ru.blogabout.arbitrationmanager.config.jwt;
 
-import entity.User;
+import ru.blogabout.arbitrationmanager.entity.User;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;

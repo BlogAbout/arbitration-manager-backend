@@ -1,14 +1,14 @@
-package service;
+package ru.blogabout.arbitrationmanager.service;
 
-import dto.PageListDto;
-import entity.Property;
-import entity.User;
+import ru.blogabout.arbitrationmanager.dto.PageListDto;
+import ru.blogabout.arbitrationmanager.entity.Property;
+import ru.blogabout.arbitrationmanager.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import repository.PropertyRepository;
+import ru.blogabout.arbitrationmanager.repository.PropertyRepository;
 
 import java.io.IOException;
 

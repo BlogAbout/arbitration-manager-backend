@@ -1,4 +1,4 @@
-package config;
+package ru.blogabout.arbitrationmanager.config;
 
 import org.springframework.boot.web.server.ErrorPage;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;

@@ -1,4 +1,4 @@
-package exception;
+package ru.blogabout.arbitrationmanager.exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

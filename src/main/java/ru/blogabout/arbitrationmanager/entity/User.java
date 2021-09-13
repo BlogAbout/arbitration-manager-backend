@@ -1,8 +1,8 @@
-package entity;
+package ru.blogabout.arbitrationmanager.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import dto.ERole;
+import ru.blogabout.arbitrationmanager.dto.ERole;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -285,7 +285,7 @@ public class User implements UserDetails {
                 ", companyName='" + companyName + '\'' +
                 ", phone='" + phone + '\'' +
                 ", noMiddleName=" + noMiddleName +
-                ", entity=" + entity +
+                ", ru.blogabout.arbitrationmanager.entity=" + entity +
                 ", enabled=" + enabled +
                 ", locked=" + locked +
                 ", validationCode=" + validationCode +

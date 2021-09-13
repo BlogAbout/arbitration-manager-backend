@@ -1,8 +1,8 @@
-package service;
+package ru.blogabout.arbitrationmanager.service;
 
-import dto.ERole;
-import dto.PageListDto;
-import entity.User;
+import ru.blogabout.arbitrationmanager.dto.ERole;
+import ru.blogabout.arbitrationmanager.dto.PageListDto;
+import ru.blogabout.arbitrationmanager.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -11,8 +11,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import pojo.SignupRequest;
-import repository.UserRepository;
+import ru.blogabout.arbitrationmanager.pojo.SignupRequest;
+import ru.blogabout.arbitrationmanager.repository.UserRepository;
 
 import javax.transaction.Transactional;
 import java.io.IOException;
