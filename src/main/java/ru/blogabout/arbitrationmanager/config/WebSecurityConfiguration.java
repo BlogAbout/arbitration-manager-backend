@@ -1,9 +1,6 @@
 package ru.blogabout.arbitrationmanager.config;
 
-import ru.blogabout.arbitrationmanager.config.jwt.AuthEntryPointJwt;
-import ru.blogabout.arbitrationmanager.config.jwt.AuthTokenFilter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,6 +16,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import ru.blogabout.arbitrationmanager.config.jwt.AuthEntryPointJwt;
+import ru.blogabout.arbitrationmanager.config.jwt.AuthTokenFilter;
 import ru.blogabout.arbitrationmanager.service.UserService;
 
 @Configuration
@@ -31,8 +30,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     private AuthEntryPointJwt unauthorizedHandler;
 
-    @Value("${ru.blogabout.arbitrationmanager.config.allower.origins}")
-    private String allowerOrigins;
+    //@Value("${ru.blogabout.arbitrationmanager.config.allower.origins}")
+    //private String allowerOrigins;
 
     @Bean
     public AuthTokenFilter authenticationJwtTokenFilter() {
