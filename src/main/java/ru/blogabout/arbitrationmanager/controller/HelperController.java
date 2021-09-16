@@ -44,4 +44,9 @@ public class HelperController {
             return new ResponseEntity<String>("Прозошла ошибка отправки заявки. Попробуйте позже.", HttpStatus.ACCEPTED);
         }
     }
+
+    @GetMapping("/ping")
+    public ResponseEntity<String> ping() {
+        return new ResponseEntity<String>("Ping success.", HttpStatus.OK);
+    }
 }
