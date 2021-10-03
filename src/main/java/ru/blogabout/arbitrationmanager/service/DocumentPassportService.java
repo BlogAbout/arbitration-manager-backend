@@ -4,7 +4,6 @@ import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.blogabout.arbitrationmanager.entity.DocumentPassport;
-import ru.blogabout.arbitrationmanager.entity.User;
 import ru.blogabout.arbitrationmanager.repository.DocumentPassportRepository;
 
 import java.io.IOException;
